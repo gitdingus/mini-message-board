@@ -1,0 +1,12 @@
+extends layout 
+
+block content 
+
+  h1= title
+
+  form(method='POST' action='')
+    label(for='name') Name: 
+    input#name(type='text' name='name' required)
+    label(for='message') Message: 
+    textarea#message(name='message' required)
+    button(type='submit') Post Message
