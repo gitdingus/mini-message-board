@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+.message>p {
+  font-size: 1.3em;
+}
+.tagline {
+  display: flex;
+  justify-content: space-between;
+}
