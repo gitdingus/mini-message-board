@@ -1,5 +1,13 @@
 extends layout
 
+mixin message(message)
+  div.message
+    p #{message.text}
+    div.tagline
+      p #{message.user}
+      p #{message.added.toLocaleString()}
+
 block content
   h1= title
-  p Welcome to #{title}
+  each message in messages 
+    +message(message)
